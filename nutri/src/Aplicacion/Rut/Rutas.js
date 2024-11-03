@@ -1,4 +1,7 @@
 import React from 'react'
+import { Routes, Route } from 'react-router-dom'
+
+import Achas from '../Diseño/Achas'
 
 function Rutas() {
     return (

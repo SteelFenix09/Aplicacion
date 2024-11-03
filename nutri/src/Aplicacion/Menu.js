@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 
 function Menu() {
     return (
@@ -17,7 +17,7 @@ function Menu() {
                             <Link class="nav-link active" aria-current="page" to="/producto">Productos</Link>
                         </li>
                         <li class="nav-item">
-                            <Link class="nav-link" to="/calificaciones">Calificaciones</Link>
+                            <Link class="nav-link" to="/iniciativa">Iniciativa</Link>
                         </li>
                         
                     </ul>
