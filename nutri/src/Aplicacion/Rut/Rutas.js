@@ -1,11 +1,14 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 
-import Achas from '../Diseño/Achas'
+import Iniciativa from '../Diseño/Iniciativa'
+
 
 function Rutas() {
     return (
-        <div>Rutas</div>
+        <Routes>
+            <Route path='/iniciativa' element = {<Iniciativa/>} />
+        </Routes>
     )
 }
 

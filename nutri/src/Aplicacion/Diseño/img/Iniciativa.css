@@ -1,0 +1,21 @@
+.manipulacio {
+    width: 600px;
+    height: 500px;
+
+}
+
+.text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.encabezado {
+    color: rgb(110, 154, 207);
+    font-size: 104px;
+}
+
+.text-nutri {
+    font-size: 25px;
+    
+}
