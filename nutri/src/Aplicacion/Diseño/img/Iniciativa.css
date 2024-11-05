@@ -1,0 +1,45 @@
+.manipulacio {
+    width: 600px;
+    height: 500px;
+
+}
+
+.text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.encabezado {
+    color: rgb(110, 154, 207);
+    font-size: 104px;
+}
+
+.text-nutri {
+    font-size: 25px;
+
+}
+
+.buton {
+    background-color: #4CAF50;
+    /* Color de fondo del botón */
+    color: white;
+    /* Color del texto del botón */
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.buton:hover {
+    background-color: #45a049;
+    /* Cambia el color de fondo al pasar el cursor sobre el botón */
+}
+
+.tit-inici {
+    text-align: center;
+}
