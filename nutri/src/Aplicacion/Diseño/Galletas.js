@@ -5,6 +5,7 @@ function Galletas() {
     return (
         <div>Galletas
             <img src={img}></img>
+            <h1>Hola</h1>
         </div>
     )
 }
