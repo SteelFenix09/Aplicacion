@@ -5,6 +5,7 @@ function Refrescos() {
     return (
         <div>Refrescos
             <img src={img}></img>
+            <h1>Hola</h1>
         </div>
     )
 }
