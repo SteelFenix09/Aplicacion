@@ -1,45 +1,62 @@
+body{
+    background-image: url(Nutri3.jpg);
+    width: 1610px;
+    height: 2310;
+}
 .manipulacio {
-    width: 600px;
-    height: 500px;
-
+    width: 630px;
+    height: 590px;
+    margin-right: 70px;
 }
 
 .text {
-    font-size: 16px;
+    font-size: 10px;
     font-weight: bold;
-    color: #333;
+    color: #fe3737;
 }
 
 .encabezado {
     color: rgb(110, 154, 207);
-    font-size: 104px;
+    font-size: 60px;
+    margin-top: 50px;
 }
 
 .text-nutri {
-    font-size: 25px;
+    font-size: 21px;
+    margin-right: 55px;
 
 }
 
 .buton {
-    background-color: #4CAF50;
+    background-color: rgb(196, 158, 231);
     /* Color de fondo del botón */
-    color: white;
+    color: rgb(16, 13, 13);
     /* Color del texto del botón */
     border: none;
-    padding: 10px 20px;
+    border-radius: 10px;
+    padding: 06px 08px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 18px;
     margin: 4px 2px;
+
     cursor: pointer;
 }
 
 .buton:hover {
-    background-color: #45a049;
+    background-color: rgb(176, 116, 233);
     /* Cambia el color de fondo al pasar el cursor sobre el botón */
 }
 
 .tit-inici {
     text-align: center;
+    margin-top: 50px;
+    color:rgb(110, 154, 207);
+    font-size: 55px;
+}
+.text1{
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 25px;
 }
