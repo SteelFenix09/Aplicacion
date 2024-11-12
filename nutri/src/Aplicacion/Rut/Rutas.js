@@ -9,6 +9,10 @@ import Galletas from '../Diseño/Galletas'
 import Sabritas from '../Diseño/Sabritas'
 import Refrescos from '../Diseño/Refrescos'
 
+import Rufles from '../Diseño/InfoSabritas/Rufles'
+import Torci from '../Diseño/InfoSabritas/Torci'
+import Pizz from '../Diseño/InfoSabritas/Pizz'
+
 
 function Rutas() {
     return (
@@ -18,6 +22,7 @@ function Rutas() {
             <Route path='/galleta' element = {<Galletas/>}/>
             <Route path='/sabrita' element = {<Sabritas/>}/>
             <Route path='/refresco' element = {<Refrescos/>} />
+            <Route path='/masdoritos' element = { <Rufles/>} />
         </Routes>
     )
 }
