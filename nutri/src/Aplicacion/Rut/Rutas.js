@@ -22,7 +22,7 @@ function Rutas() {
             <Route path='/galleta' element = {<Galletas/>}/>
             <Route path='/sabrita' element = {<Sabritas/>}/>
             <Route path='/refresco' element = {<Refrescos/>} />
-            <Route path='/masdoritos' element = { <Rufles/>} />
+            <Route path='/masdoritos' element = { <Pizz/>} />
         </Routes>
     )
 }
