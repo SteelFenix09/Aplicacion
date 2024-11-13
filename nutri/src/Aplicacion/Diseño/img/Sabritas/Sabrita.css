@@ -1,0 +1,46 @@
+#liena {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 70px;
+    color: rgb(110, 154, 207);
+}
+
+#Pizz {
+    width: 300px;
+}
+
+#t-piz {
+    width: 30%;
+}
+
+#lienado{
+    text-align: center;
+}
+
+#porcion{
+    width: 20%;
+}
+
+#img-piza{
+    width: 300px;
+}
+
+#rocem {
+    width: 450px;
+}
+
+
+
+div {
+    margin: 0;
+    padding: auto;
+}
+
+/* table {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+table td, table th {
+    border: 1px solid #000;
+} */
