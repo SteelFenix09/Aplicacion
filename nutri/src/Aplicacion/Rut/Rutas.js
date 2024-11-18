@@ -26,6 +26,8 @@ function Rutas() {
             <Routes> {/* BrowserRouter eliminado */}
                 <Route path='/iniciativa' element={<Iniciativa />} />
                 <Route path='/mas' element={<MasIniciativa />} />
+
+
                 <Route path='/galleta' element={<Galletas />} />
                 <Route path='/sabrita' element={<Sabritas />} />
                 <Route path='/bebidas' element={<Refrescos />} />
