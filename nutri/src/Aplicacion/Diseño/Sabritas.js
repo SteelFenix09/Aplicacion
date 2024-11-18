@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useSearchParams } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 
 
@@ -9,66 +10,65 @@ import Torci from './img/Sabritas/torci.png'
 
 
 function Sabritas() {
+
+    const [buscarParams] = useSearchParams();
+    const buscaTexto = buscarParams.get('search') || '';
+    const [localTexto, setLocalTexto] = useState(buscaTexto)
+
+    const sabri = [{
+        nombre: 'Doritos Pizzerolas',
+        descripcion: 'Son unas deliciosas botanas que combinan el sacrujiente y divertido de los Doritos con el irresistiblegusto de la pizza',
+        imagen: <img src={Pizz} id='pizz' />,
+        direccion: <li class="buton"><Link class="buton" to="/pizz">Mas informacion...</Link></li>
+            
+        
+    },
+    {
+        nombre: 'Rufles Queso',
+        descripcion: 'Estos pequeños bocadillos en forma de "chetos" están recubiertos de un delicioso polvo de queso que los hace irresistibles.',
+        imagen: <img src={Rufles} id='rufles' />,
+        direccion:<li class="buton"><Link class="buton" to="/rufles">Mas informacion...</Link></li>
+    },
+    {
+        nombre: 'Chetos Torciditos',
+        descripcion: '...',
+        imagen: <img src={Torci} id='torci' />,
+        direccion:<li class="buton"><Link class="buton" to="/torciditos">Mas informacion...</Link></li>
+    },
+    ]
+
+    const delicias = localTexto ? sabri.filter((pro) => pro.nombre.toLowerCase().includes(localTexto.toLowerCase())) : sabri
+
+    const buscador = (e) => { setLocalTexto(e.target.value) }
+
     return (
         <div>
-
+            <form class="d-flex" role="search" >
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" value={localTexto} onChange={buscador} />
+            </form>
             <table>
-                <tr >
-                    <td colSpan={3} id='liena'>
-                        Sabritas
-                    </td>
-
-                </tr>
-                <tr>
-                    <td colSpan={3}>
-                        hola 3
-                    </td>
-
-                </tr>
-                <tr>
-                    <td id='t-piz'>
-                        <img src={Pizz} id='Pizz'></img>
-                    </td>
-                    <td>
-                        <img src={Rufles} id='Rufles'></img>
-                    </td>
-                    <td>
-                        <img src={Torci}></img>
-                    </td>
-                </tr>
-                <tr id='lienado'>
-                    <td>
-                        <h1>Doritos Pizzerolas</h1>
-                        <p> Son unas deliciosas botanas que combinan el sabor
-                            crujiente y divertido de los Doritos con el irresistible
-                            gusto de la pizza.</p>
-                    </td>
-                    <td>
-                        <h1>Rufles Queso</h1>
-                        <p>Estos pequeños bocadillos en forma de "chetos" están recubiertos de un delicioso polvo de queso que los hace irresistibles.</p>
-                    </td>
-                    <td>
-                        <h1>Chetos Torciditos</h1>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <li class="buton">
-                            <Link class="buton" to="/masdoritos">Mas informacion</Link>
-                        </li>
-                    </td>
-                    <td>
-                        <li class="buton">
-                            <Link class="buton" to="/masrufles">Mas informacion</Link>
-                        </li>
-                    </td>
-                    <td>
-                    <li class="buton">
-                            <Link class="buton" to="/mastorci">Mas informacion</Link>
-                        </li>
-                    </td>
-                </tr>
+                <tbody>
+                    <tr>
+                        {delicias.map((pro, index) => (
+                            <td key={index}>{pro.imagen}</td>
+                        ))}
+                    </tr>
+                    <tr>
+                        {delicias.map((pro, index) => (
+                            <td key={index}>{pro.nombre}</td>
+                        ))}
+                    </tr>
+                    <tr>
+                        {delicias.map((pro, index) => (
+                            <td key={index}>{pro.descripcion}</td>
+                        ))}
+                    </tr>
+                    <tr>
+                    {delicias.map((pro, index) => (
+                            <td key={index}>{pro.direccion}</td>
+                        ))}
+                    </tr>
+                </tbody>
             </table>
         </div>
     )

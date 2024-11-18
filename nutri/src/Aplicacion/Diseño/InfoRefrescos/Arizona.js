@@ -1,20 +1,20 @@
 import React from 'react'
-import './../img/Sabritas/Sabrita.css'
-import rufles from './../img/Sabritas/Rufles.png'
 import { Link } from 'react-router-dom'
 
+import './../img/Refrescos/refrs.css'
+import arizona from './../img/Refrescos/Nutri10.png'
 
-function Rufles() {
+function Arizona() {
     return (
         <div>
             <table >
                 <tr>Tabla y Recomendaciones</tr>
                 <tr>
-                    <td rowSpan={22} ><img src={rufles} id='img-rufles' ></img></td>
+                    <td rowSpan={22} ><img src={arizona} id='img-rufles' ></img></td>
                     <td colSpan={3}>Informacion Nutricional</td>
                     <td colSpan={7}>
                         <li class="buton">
-                            <Link class="buton" to="/sabrita">Regresar</Link>
+                            <Link class="buton" to="/bebidas">Regresar</Link>
                         </li>
                     </td>
                 </tr>
@@ -102,8 +102,9 @@ function Rufles() {
                     <td>0% </td>
                 </tr>
             </table>
+
         </div>
     )
 }
 
-export default Rufles
+export default Arizona
