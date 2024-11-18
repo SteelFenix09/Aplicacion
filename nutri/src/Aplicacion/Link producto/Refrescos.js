@@ -53,7 +53,7 @@ function Refrescos() {
                 <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" value={localTexto} onChange={buscador} />
             </form>
             <table>
-                <tbody>
+                <tbody> 
                     <tr>
                         {filtrar.map((pro, index) => (
                             <td key={index}> {pro.imagen} </td>
