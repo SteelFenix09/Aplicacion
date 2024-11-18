@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 import './Diseño/img/Iniciativa.css'
 
 function MasIniciativa() {
@@ -45,6 +47,9 @@ function MasIniciativa() {
                         <th id="espacio"></th>
                         <td>- Alternativas saludables</td>
                     </tr>
+                    <li class="buton">
+                        <Link class="buton" to="/iniciativa">Regresar</Link>
+                    </li>
                 </tbody>
             </table>
         </div>

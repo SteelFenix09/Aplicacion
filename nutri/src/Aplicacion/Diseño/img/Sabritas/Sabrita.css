@@ -5,30 +5,17 @@
     color: rgb(110, 154, 207);
 }
 
-#Pizz {
+#pizz{
     width: 300px;
-}
-
-#t-piz {
-    width: 30%;
-}
-
-#lienado{
-    text-align: center;
-}
-
-#porcion{
-    width: 20%;
 }
 
 #img-piza{
-    width: 300px;
+    width: 250px;
 }
 
-#rocem {
-    width: 450px;
+#img-rufles{
+    width: 400px;
 }
-
 
 
 div {

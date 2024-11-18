@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
+
+
 function Menu() {
+
     return (
         <div>
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -14,6 +17,9 @@ function Menu() {
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
+                                <Link class="nav-link" to="/informacion">Tu Informacion</Link>
+                            </li>
+                            <li class="nav-item">
                                 <Link class="nav-link" to="/iniciativa">Iniciativa</Link>
                             </li>
                             <li class="nav-item">
@@ -24,17 +30,17 @@ function Menu() {
                                     Snacks
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#"><Link to="/sabrita">Sabritas</Link></a></li>
-                                    <li><a class="dropdown-item" href="#"><Link to="/refresco">Refrescos</Link></a></li>
-                                    <li><a class="dropdown-item" href="#"><Link to="/galleta">Galletas</Link></a></li>
+                                    <li><Link class="dropdown-item" to="/sabrita">Sabritas</Link></li>
+                                    <li><Link class="dropdown-item" to="/bebidas">Bebidas</Link></li>
+                                    <li><Link class="dropdown-item" to="/galleta">Galletas</Link></li>
                                 </ul>
                             </li>
-                            
+
                         </ul>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
+                        {/* <form class="d-flex" role="search" >
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"  />
+                            <button class="btn btn-outline-success" type="submit" >Buscar</button>
+                        </form> */}
                     </div>
                 </div>
             </nav>
