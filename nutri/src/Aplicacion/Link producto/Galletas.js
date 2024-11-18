@@ -26,17 +26,27 @@ function Galletas() {
           <tr>
             <td><center>
               <li class="">
-                <Link class="nav-link" to="/sponch">tablasponch</Link>
+                <Link class="nav-link" to="/sponch">
+                  <h6>La galleta Sponch es un dulce mexicano
+                    compuesto por una base de galleta, malvavisco y
+                    cobertura de chocolate.</h6></Link>
               </li>
             </center></td>
             <td><center>
               <li class="">
-                <Link class="nav-link" to="/choki">tablaschokis</Link>
+                <Link class="nav-link" to="/choki"><h6>
+                  La galleta Chokis es una galleta crujiente con
+                  trozos de chocolate,
+                  Su textura combina lo crujiente y lo suave.</h6></Link>
               </li>
             </center></td>
             <td><center>
               <li class="nav-item">
-                <Link class="nav-link" to="/empe">tablasempe</Link>
+                <Link class="nav-link" to="/empe">
+                  <h6>La galleta Emperador de chocolate
+                    es una galleta rellena de crema de chocolate,
+                    con una textura crujiente y sueave.</h6>
+                </Link>
               </li></center></td>
           </tr>
         </tbody>
