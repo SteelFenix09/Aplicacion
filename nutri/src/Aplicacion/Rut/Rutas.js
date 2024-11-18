@@ -23,6 +23,7 @@ function Rutas() {
             <Route path='/sabrita' element = {<Sabritas/>}/>
             <Route path='/refresco' element = {<Refrescos/>} />
             <Route path='/masdoritos' element = { <Pizz/>} />
+            <Route path='/masrufles' element = { <Rufles/>} />
         </Routes>
     )
 }

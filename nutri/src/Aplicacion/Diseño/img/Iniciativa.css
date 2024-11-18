@@ -16,7 +16,7 @@ body{
 }
 
 .encabezado {
-    color: rgb(110, 154, 207);
+    color: rgb(16, 13, 13);
     font-size: 60px;
     margin-top: 50px;
 }
@@ -28,18 +28,21 @@ body{
 }
 
 .buton {
-    background-color: rgb(196, 158, 231);
+    background-color: rgba(251, 251, 251, 0.004);
     /* Color de fondo del botón */
     color: rgb(16, 13, 13);
     /* Color del texto del botón */
     border: none;
     border-radius: 10px;
-    padding: 06px 08px;
+    padding: 04px 06px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 18px;
-    margin: 4px 2px;
+    margin: 2px 1px;
+    box-sizing: border-box;
+    text-decoration:dashed;
+    margin-inline: 20px;
 
     cursor: pointer;
 }
@@ -52,12 +55,12 @@ body{
 .tit-inici {
     text-align: center;
     margin-top: 50px;
-    color:rgb(110, 154, 207);
+    color:rgb(16, 13, 13);
     font-size: 55px;
 }
 .text1{
     font-size: 20px;
-    margin-left: 50px;
+    margin-left: 200px;
     margin-top: 25px;
 }
 

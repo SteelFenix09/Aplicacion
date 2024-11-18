@@ -26,14 +26,14 @@ function MasIniciativa() {
                         <td>- Alertas sobre grasas saturadas y trans</td>
                     </tr>
                     <tr>
-                        <td>- Promover hábitos de alimentación saludable</td>
+                        <td> - Promover hábitos de alimentación saludable</td>
                         <th id="espacio"></th>
-                        <td>- Guía de consumo de sodio</td>
+                        <td> - Guía de consumo de sodio</td>
                     </tr>
                     <tr>
-                        <td>- Comparación de productos</td>
+                        <td> -  Comparación de productos</td>
                         <th id="espacio"></th>
-                        <td>- Promoción de alimentos ricos en fibra</td>
+                        <td> - Promoción de alimentos ricos en fibra</td>
                     </tr>
                     <tr>
                         <td>- Informar sobre alérgenos e ingredientes críticos</td>

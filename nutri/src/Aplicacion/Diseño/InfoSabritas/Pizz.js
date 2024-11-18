@@ -6,11 +6,12 @@ import { Link } from 'react-router-dom'
 function Pizz() {
   return (
     <div>
+      <h1 className='Pizz1'><strong> Tabla y Recomendaciones </strong></h1>
       <table >
-        <tr>Tabla y Recomendaciones</tr>
+        
         <tr>
           <td rowSpan={22} ><img src={Piz} id='img-piza' ></img></td>
-          <td colSpan={3}>Informacion Nutricional</td>
+          <td colSpan={3}><strong> Informacion Nutricional </strong></td>
           <td colSpan={7}>
             <li class="buton">
               <Link class="buton" to="/sabrita">Regresar</Link>
@@ -18,10 +19,10 @@ function Pizz() {
           </td>
         </tr>
         <tr>
-          <td colSpan={3}>Tamaño de la porcion</td>
+          <td colSpan={3}><strong> Tamaño de la porcion </strong></td>
         </tr>
         <tr>
-          <td colSpan={3}>Porcion por paquete</td>
+          <td colSpan={3}><strong>Porcion por paquete</strong></td>
         </tr>
         <tr>
           <td>Calorias</td>

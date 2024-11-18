@@ -8,7 +8,7 @@ function Rufles() {
                     <td colSpan={2}>Informacion Nutricional</td>
                 </tr>
                 <tr>
-                    <td colSpan={2}>Tamaño de la porcion</td>
+                    <td colSpan={2}><strong>Tamaño de la porcion</strong> </td>
                 </tr>
                 <tr>
                     <td colSpan={2}>Porcion por paquete</td>
