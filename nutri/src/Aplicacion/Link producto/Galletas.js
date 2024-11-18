@@ -1,7 +1,9 @@
 import React from 'react'
-import img from './img/sponch.jpg'
-import cho from './img/chokis.jpg'
-import empe from './img/empe.png'
+import { Link } from 'react-router-dom'
+
+import cho from './../Diseño/img/imgalleta/chokis.jpg'
+import empe from './../Diseño/img/imgalleta/empe.png'
+import img from './../Diseño/img/imgalleta/sponch.jpg'
 
 function Galletas() {
   return (
@@ -22,9 +24,20 @@ function Galletas() {
             <td><img src={empe} width="480" height="300"></img></td>
           </tr>
           <tr>
-            <td><center><button>Galleta sponch</button></center></td>
-            <td><center><button>Galleta chokis</button></center></td>
-            <td><center><button>Galleta emperador</button></center></td>
+            <td><center>
+              <li class="">
+                <Link class="nav-link" to="/sponch">tablasponch</Link>
+              </li>
+            </center></td>
+            <td><center>
+              <li class="">
+                <Link class="nav-link" to="/choki">tablaschokis</Link>
+              </li>
+            </center></td>
+            <td><center>
+              <li class="nav-item">
+                <Link class="nav-link" to="/empe">tablasempe</Link>
+              </li></center></td>
           </tr>
         </tbody>
       </table>

@@ -5,9 +5,13 @@ import Iniciativa from '../Diseño/Iniciativa'
 import MasIniciativa from '../MasIniciativa'
 
 
-import Galletas from '../Diseño/Galletas'
+import Galletas from '../Link producto/Galletas'
 import Sabritas from '../Diseño/Sabritas'
 import Refrescos from '../Diseño/Refrescos'
+import Infoponch from './Infosponch'
+import Infochokis from './Infochokis'
+import Infoempe from './Infoempe';
+
 
 
 function Rutas() {
@@ -18,6 +22,10 @@ function Rutas() {
             <Route path='/galleta' element = {<Galletas/>}/>
             <Route path='/sabrita' element = {<Sabritas/>}/>
             <Route path='/refresco' element = {<Refrescos/>} />
+            <Route path='/sponch' element = {<Infoponch/>} />
+            <Route path='/choki' element = {<Infochokis/>} />
+            <Route path='/empe' element = {<Infoempe/>} />
+
         </Routes>
     )
 }
