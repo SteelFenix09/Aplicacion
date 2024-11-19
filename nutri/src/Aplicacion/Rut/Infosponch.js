@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import gal from './../Diseño/img/imgalleta/galletadesponch.png'
 import img from './../Diseño/img/imgalleta/sponchtabla.jpg'
+import './../Diseño/Galletas.css'
 
 
 function Infoponch() {
@@ -13,8 +14,8 @@ function Infoponch() {
                         <th scope="col"><h2>GALLETA SPONCH</h2></th>
                         <th scope="col"><h2>INFORMACIÓN NUTRICIONAL</h2></th>
                         <th scope="col"><h2>RECOMENDACIONES</h2></th>
-                        <th scope="col"><center><li class="nav-item">
-                            <Link class="nav-link" to="/galleta">
+                        <th scope="col"><center><li class="botoncito">
+                            <Link class="botoncito" to="/galleta">
                                 <h6>REGRESAR</h6>
                             </Link>
                         </li></center>

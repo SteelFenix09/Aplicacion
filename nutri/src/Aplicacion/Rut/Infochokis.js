@@ -12,11 +12,13 @@ function Infochokis() {
                         <th scope="col"><h2>GALLETA CHOKIS</h2></th>
                         <th scope="col"><h2>INFORMACIÓN NUTRICIONAL</h2></th>
                         <th scope="col"><h2>RECOMENDACIONES</h2></th>
-                        <th scope="col"><center><li class="nav-item">
-                            <Link class="nav-link" to="/galleta">
-                                <h6>REGRESAR</h6>
-                            </Link>
-                        </li></center>
+                        <th scope="col"><center>
+                            <li class="botoncito">
+                                <Link class="botoncito" to="/galleta">
+                                    <h6>REGRESAR</h6>
+                                </Link>
+                            </li>
+                        </center>
                         </th>
                     </tr>
                 </thead>
