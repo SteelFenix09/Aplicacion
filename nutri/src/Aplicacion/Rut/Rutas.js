@@ -18,11 +18,13 @@ import Pizz from '../Diseño/InfoSabritas/Pizz'
 
 import Arizona from '../Diseño/InfoRefrescos/Arizona'
 
+import ListaProductos from '../ListaProductos'
+
 
 function Rutas() {
     return (
         <div>
-            <Menu />
+            <Menu/>
             <Routes> {/* BrowserRouter eliminado */}
                 <Route path='/iniciativa' element={<Iniciativa />} />
                 <Route path='/mas' element={<MasIniciativa />} />
@@ -43,6 +45,9 @@ function Rutas() {
                 
                 <Route path='/refrescos' element={<Sabritas />} />
                 <Route path='/refrescos' element={<Refrescos />} />
+
+                <Route path='/datos' element={<ListaProductos />} />
+
 
             </Routes>
         </div>
