@@ -1,5 +1,5 @@
 body{
-    background-image: url(Nutri3.jpg);
+    background-image: url(Nutri13.jpg);
     width: 1610px;
     height: 2310;
 }
@@ -17,18 +17,19 @@ body{
 
 .encabezado {
     color: rgb(110, 154, 207);
-    font-size: 60px;
+    font-size: 70px;
     margin-top: 50px;
 }
 
 .text-nutri {
     font-size: 21px;
-    margin-right: 55px;
+    margin-right: 100px;
+    text-align: justify;
 
 }
 
 .buton {
-    background-color: rgb(196, 158, 231);
+    background-color: rgba(196, 158, 231, 0);
     /* Color de fondo del botón */
     color: rgb(16, 13, 13);
     /* Color del texto del botón */

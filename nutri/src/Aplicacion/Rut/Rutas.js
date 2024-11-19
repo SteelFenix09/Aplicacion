@@ -10,6 +10,7 @@ import Sabritas from '../Diseño/Sabritas'
 import Refrescos from '../Link producto/Refrescos'
 
 import Menu from '../Menu'
+import Footer from '../Footer'
 
 import Rufles from '../Diseño/InfoSabritas/Rufles'
 import Torci from '../Diseño/InfoSabritas/Torci'
@@ -43,8 +44,8 @@ function Rutas() {
                 
                 <Route path='/refrescos' element={<Sabritas />} />
                 <Route path='/refrescos' element={<Refrescos />} />
-
             </Routes>
+            <Footer />
         </div>
     )
 }

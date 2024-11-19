@@ -23,7 +23,7 @@ function Refrescos() {
     const [localTexto, setLocalTexto] = useState(buscaTexto)
 
     const soda = [{
-        nombre: 'Arizona',
+        nombre: 'Jumex Durazno',
         descripcion: '...',
         imagen: <img src={Arizona} id='arizona' />,
         direcion: <li class="buton"><Link class="buton" to="/arizona">Mas informacion...</Link></li>
