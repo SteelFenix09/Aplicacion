@@ -51,16 +51,4 @@ body{
 
 .tit-inici {
     text-align: center;
-    margin-top: 50px;
-    color:rgb(110, 154, 207);
-    font-size: 55px;
-}
-.text1{
-    font-size: 20px;
-    margin-left: 50px;
-    margin-top: 25px;
-}
 
-#espacio {
-    width: 40%;
-}
