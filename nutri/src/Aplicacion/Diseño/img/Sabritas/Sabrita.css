@@ -7,14 +7,22 @@
 
 #pizz{
     width: 300px;
+    margin-left: 100px;
 }
 
-#img-piza{
-    width: 250px;
+#img-pizz{
+    width: 300px;
+    margin-left: 100px;
 }
 
 #img-rufles{
+    width: 550px;
+    margin-left: 10px;
+}
+
+#img-torci{
     width: 400px;
+    margin-left: 10px; 
 }
 
 
@@ -31,3 +39,21 @@ div {
 table td, table th {
     border: 1px solid #000;
 } */
+
+.DoPizz{
+    color: rgb(110, 154, 207);
+    margin-top: 50px;
+    margin-left: 130px;
+}
+
+.Rufles{
+    color: rgb(110, 154, 207);
+    margin-top: 50px;
+    margin-left: 130px;
+}
+
+.Tocxi{
+    color: rgb(110, 154, 207);
+    margin-top: 50px;
+    margin-left: 130px; 
+}

@@ -2,17 +2,19 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import './../img/Refrescos/refrs.css'
-import pepsi from './../img/Refrescos/Nutri2.png'
+import jumex from './../img/Refrescos/Nutri3.png'
 
-function Pepsi() {
-    return (
-        <div><table className="table-striped" >
-        <tr><h1 className='Pepsi'>Tabla y Recomendaciones</h1></tr>
+
+function Jumex(){
+  return (
+    <div>
+    <table className="table-striped" >
+        <tr><h1 className='Jumex'>Tabla y Recomendaciones</h1></tr>
         <tr>
             
-            <td rowSpan={22} className='Pepsi_R'><img src={pepsi} id='img-pepsi' ></img></td>
+            <td rowSpan={22} ><img src={jumex} id='img-jumex' ></img></td>
 
-                <td colSpan={3}><h4><strong>Informacion Nutricional Por Envase(600ml)</strong></h4></td>
+                <td colSpan={3}><h4><strong>Informacion Nutricional Por Envase(200ml)</strong></h4></td>
             <td></td>
 
         </tr>
@@ -106,7 +108,7 @@ function Pepsi() {
                 </li>
         </td>
     </table></div>
-    )
+  )
 }
 
-export default Pepsi
+export default Jumex

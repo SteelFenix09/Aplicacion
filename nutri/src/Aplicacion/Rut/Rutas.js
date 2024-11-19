@@ -17,7 +17,9 @@ import Torci from '../Diseño/InfoSabritas/Torci'
 import Pizz from '../Diseño/InfoSabritas/Pizz'
 
 
-import Arizona from '../Diseño/InfoRefrescos/Arizona'
+import Jumex from '../Diseño/InfoRefrescos/Jumex'
+import Pepsi from '../Diseño/InfoRefrescos/Pepsi'
+import Sprite from '../Diseño/InfoRefrescos/Sprite'
 
 
 function Rutas() {
@@ -38,7 +40,9 @@ function Rutas() {
                 <Route path='/rufles' element={<Rufles />} />
                 <Route path='/torciditos' element={<Torci />} />
 
-                <Route path='/arizona' element={<Arizona />} />
+                <Route path='/jumex' element={<Jumex />} />
+                <Route path='/pepsi' element={<Pepsi />} />
+                <Route path='/sprite' element={<Sprite />} />
 
 
                 

@@ -1,7 +1,36 @@
 #sprite{
+    height: 500px;
+}
+
+#jumex{
+    width: 150px;
+    height: 400px ;
+}
+
+#pepsi{
     width: 400px;
 }
 
-#arizona{
-    width: 550px;
+.Jumex{
+color: rgb(110, 154, 207);
+margin-top: 50px;
+margin-left: 130px;
+}
+#jumex{
+    width: 500px;
+}
+
+.text-jumex{
+    margin-right: 1550px;
+}
+
+.Pepsi{
+    color: rgb(110, 154, 207);
+    margin-top: 50px;
+    margin-left: 130px;
+}
+.Sprite{
+    color: rgb(110, 154, 207);
+    margin-top: 50px;
+    margin-left: 130px;  
 }

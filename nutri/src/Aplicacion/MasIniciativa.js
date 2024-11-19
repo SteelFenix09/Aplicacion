@@ -47,11 +47,14 @@ function MasIniciativa() {
                         <th id="espacio"></th>
                         <td>- Alternativas saludables</td>
                     </tr>
-                    <li class="buton">
-                        <Link class="buton" to="/iniciativa">Regresar</Link>
-                    </li>
+
                 </tbody>
             </table>
+            <td colSpan={6}>
+                <li class="buton">
+                    <Link class="buton" to="/bebidas">Regresar</Link>
+                </li>
+                    </td>
         </div>
     )
 }
