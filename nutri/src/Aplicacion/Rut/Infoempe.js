@@ -1,5 +1,5 @@
 import React from 'react'
-import uwu from './../Diseño/img/imgalleta/empe.png'
+import uwu from './../Diseño/img/imgalleta/galletadeempe.png'
 import tablaempe from './../Diseño/img/imgalleta/emperadortabla.png'
 
 
@@ -16,8 +16,8 @@ function Infoempe() {
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src={uwu} width="480" height="300"></img>
-                        </td>
+                        <td><center><img src={uwu} width="400" height="200"></img>
+                        </center></td>
                         <td rowSpan={3}>
                             <img src={tablaempe}></img>
                         </td>

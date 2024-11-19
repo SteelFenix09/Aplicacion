@@ -1,6 +1,6 @@
 import React from 'react'
 
-import gal from './../Diseño/img/imgalleta/sponch.jpg'
+import gal from './../Diseño/img/imgalleta/galletadesponch.png'
 import img from './../Diseño/img/imgalleta/sponchtabla.jpg'
 
 
@@ -17,7 +17,7 @@ function Infoponch() {
         </thead>
         <tbody>
             <tr>
-                <td><img src={gal} width="480" height="300"></img>
+                <td><img src={gal} width="300" height="250"></img>
                 </td>
                 <td rowSpan={3}>
                     <img src={img}></img>

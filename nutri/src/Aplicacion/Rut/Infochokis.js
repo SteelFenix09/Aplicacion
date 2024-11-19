@@ -1,5 +1,5 @@
 import React from 'react'
-import waos from './../Diseño/img/imgalleta/chokis.jpg'
+import waos from './../Diseño/img/imgalleta/galletadechokis.png'
 import tablacho from './../Diseño/img/imgalleta/tablachokis.png'
 
 
@@ -16,7 +16,7 @@ function Infochokis() {
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src={waos} width="480" height="300"></img>
+                        <td><img src={waos} width="270" height="240"></img>
                         </td>
                         <td rowSpan={3}>
                             <img src={tablacho}></img>
