@@ -1,13 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom'
 
+import ListaProductos from './ListaProductos';
+
 function Menu() {
+
+    const [searchText, setSearchText] = useState('');
+    const navigate = useNavigate();
+
+    const handleBuscar = (e) => { // Agrega 'e' como argumento
+        e.preventDefault();
+        navigate(`/datos?search=${searchText}`);
+    };
+
     return (
         <div>
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
                     <a class="navbar-brand" href=""></a>
-                    <Link class="navbar-brand" to="/achas">ACHAS</Link>
+                    <Link class="navbar-brand" to="/achas"><strong>NUTRIONFACTS</strong></Link>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -16,20 +28,24 @@ function Menu() {
                             <li class="nav-item">
                                 <Link class="nav-link" to="/iniciativa">Iniciativa</Link>
                             </li>
+                            <li class="nav-item">
+                                <Link class="nav-link" to="/spcinessaludables">Opcines Saludables</Link>
+                            </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Productos
+                                    Snacks
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#"><Link to="/sabrita">Sabritas</Link></a></li>
-                                    <li><a class="dropdown-item" href="#"><Link to="/refresco">Refrescos</Link></a></li>
-                                    <li><a class="dropdown-item" href="#"><Link to="/galleta">Galletas</Link></a></li>
+                                    <li><Link class="dropdown-item" to="/sabrita">Sabritas</Link></li>
+                                    <li><Link class="dropdown-item" to="/bebidas">Bebidas</Link></li>
+                                    <li><Link class="dropdown-item" to="/galleta">Galletas</Link></li>
                                 </ul>
                             </li>
+
                         </ul>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        <form class="d-flex" role="search" onSubmit={(e) => handleBuscar(e)} >
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" value={searchText} onChange={(e) => setSearchText(e.target.value)} />
+                            <button class="btn btn-outline-success" type="submit" onClick={handleBuscar} >Search</button>
                         </form>
                     </div>
                 </div>

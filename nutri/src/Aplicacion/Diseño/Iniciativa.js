@@ -1,5 +1,5 @@
 import React from 'react'
-import img from './img/image.png'
+import img from './img/Nutri10.png'
 import './img/Iniciativa.css'
 import { Link } from 'react-router-dom'
 
@@ -12,24 +12,23 @@ function Iniciativa() {
                     <td rowSpan={3}><img src={img} className='manipulacio'></img></td>
                     <td ></td>
                     <td ></td>
-                    <td><h2 className='encabezado'> Más sobre nuestra iniciativa</h2></td>
+                    <td><h3 className='encabezado'> ¡Nuestra iniciativa!</h3></td>
                 </tr>
-                <tr>
-                    <td ></td>
-                    <td ></td>
-                    <td><p className='text-nutri'>Somos conscientes de la importancia de una nutrición adecuada 
-                        para nuestras comidas chatarras. Para ello, hemos creado la 
-                        Iniciativa ACHAS, que busca promover hábitos alimenticios
-                        saludables y equilibrados en nuestra dieta diaria.</p></td>
-                </tr>
+                <td ></td>
+                <td ></td>
+                <p className='text-nutri'>Nuestra iniciativa es hacer a la población Mexicana
+                    consciente de la importancia de una nutrición adecuada para nuestras salud y bienestar.
+                    Por ello, NUTRIONFACTS muestra la cantidad de calorías, grasas, azucares, etc.
+                    Que contienen los alimentos empaquetados y así promover hábitos alimenticios saludables y
+                    equilibrados en nuestra dieta diaria.</p>
                 <tr>
                     <td></td>
                     <td></td>
-                    <td>
-                        <li class="buton">
-                            <Link class="buton" to="/mas">Leer mas</Link>
-                        </li>
-                    </td>
+
+                    <li class="buton">
+                        <Link class="buton" to="/mas">¡Leer mas...!</Link>
+                    </li>
+
                 </tr>
             </table>
         </div>
