@@ -1,8 +1,9 @@
-body{
+body {
     background-image: url(Nutri3.jpg);
     width: 1610px;
     height: 2310;
 }
+
 .manipulacio {
     width: 630px;
     height: 590px;
@@ -52,3 +53,4 @@ body{
 .tit-inici {
     text-align: center;
 
+}

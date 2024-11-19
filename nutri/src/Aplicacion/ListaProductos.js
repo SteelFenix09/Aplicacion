@@ -10,6 +10,9 @@ import Arizona from './Diseño/img/Refrescos/Nutri10.png'
 import Sprite from './Diseño/img/Refrescos/Nutri7.png'
 import Pepsi from './Diseño/img/Refrescos/Nutri8.png'
 
+import cho from './Diseño/img/imgalleta/chokis.jpg'
+import empe from './Diseño/img/imgalleta/empe.png'
+import img from './Diseño/img/imgalleta/sponch.jpg'
 
 
 
@@ -21,6 +24,9 @@ function ListaProductos() {
 
     const [buscarParams] = useSearchParams();
     const localTexto = buscarParams.get('search') || '';
+
+    const [buscargalle] = useSearchParams();
+    const localgalle = buscargalle.get('search') || '';
 
 
     const sabri = [{
@@ -63,60 +69,111 @@ function ListaProductos() {
     },
     ]
 
+    const galletita = [{
+        nombre: 'Galleta sponch',
+        descripcion: <li class="">
+            <Link class="nav-link" to="/sponch">
+                <h6>La galleta Sponch es un dulce mexicano
+                    compuesto por una base de galleta, malvavisco y
+                    cobertura de chocolate.</h6></Link>
+        </li>,
+        imagen: <img src={img} id='sprite' />,
+    },
+    {
+        nombre: 'Galleta chokis',
+        descripcion: <li class="">
+            <Link class="nav-link" to="/choki"><h6>
+                La galleta Chokis es una galleta crujiente con
+                trozos de chocolate,
+                Su textura combina lo crujiente y lo suave.</h6></Link>
+        </li>,
+        imagen: <img src={cho} id='sprite' />,
+    },
+    {
+        nombre: 'Galleta emperador',
+        descripcion: <li class="nav-item">
+            <Link class="nav-link" to="/empe">
+                <h6>La galleta Emperador de chocolate
+                    es una galleta rellena de crema de chocolate,
+                    con una textura crujiente y suave.</h6>
+            </Link>
+            </li>,
+            imagen: <img src={empe} id='sprite' />,
+    },
+            ]
+
     const delicias = searchText ? sabri.filter((product) => product.nombre.toLowerCase().includes(searchText.toLowerCase())) : sabri;
 
     const filtrar = localTexto ? soda.filter((pro) => pro.nombre.toLowerCase().includes(localTexto.toLowerCase())) : soda
 
+    const galet = localgalle ? galletita.filter((gal) => gal.nombre.toLowerCase().includes(localgalle.toLowerCase())) : galletita
 
-    return (
-        <div>
-            <table>
-                <tbody>
-                    <tr>
-                        {delicias.map((pro, index) => (
-                            <td key={index}>{pro.imagen}</td>
-                        ))}
-                    </tr>
-                    <tr>
-                        {delicias.map((pro, index) => (
-                            <td key={index}>{pro.nombre}</td>
-                        ))}
-                    </tr>
-                    <tr>
-                        {delicias.map((pro, index) => (
-                            <td key={index}>{pro.descripcion}</td>
-                        ))}
-                    </tr>
-                    <tr>
-                        {delicias.map((pro, index) => (
-                            <td key={index}>{pro.direccion}</td>
-                        ))}
-                    </tr>
-                    <tr>
-                        {filtrar.map((pro, index) => (
-                            <td key={index}> {pro.imagen} </td>
-                        ))}
-                    </tr>
-                    <tr>
-                        {filtrar.map((pro, index) => (
-                            <td key={index}>{pro.nombre}</td>
-                        ))}
-                    </tr>
-                    <tr>
-                        {filtrar.map((pro, index) => (
-                            <td key={index}>{pro.descripcion}</td>
-                        ))}
-                    </tr>
-                    <tr>
-                        {filtrar.map((pro, index) => (
-                            <td key={index}>{pro.direcion}</td>
-                        ))}
-                    </tr>
-                </tbody>
-            </table>
 
-        </div>
-    )
+            return (
+            <div>
+                <table>
+                    <tbody>
+                        <tr>
+                            {delicias.map((pro, index) => (
+                                <td key={index}>{pro.imagen}</td>
+                            ))}
+                        </tr>
+                        <tr>
+                            {delicias.map((pro, index) => (
+                                <td key={index}>{pro.nombre}</td>
+                            ))}
+                        </tr>
+                        <tr>
+                            {delicias.map((pro, index) => (
+                                <td key={index}>{pro.descripcion}</td>
+                            ))}
+                        </tr>
+                        <tr>
+                            {delicias.map((pro, index) => (
+                                <td key={index}>{pro.direccion}</td>
+                            ))}
+                        </tr>
+                        <tr>
+                            {filtrar.map((pro, index) => (
+                                <td key={index}> {pro.imagen} </td>
+                            ))}
+                        </tr>
+                        <tr>
+                            {filtrar.map((pro, index) => (
+                                <td key={index}>{pro.nombre}</td>
+                            ))}
+                        </tr>
+                        <tr>
+                            {filtrar.map((pro, index) => (
+                                <td key={index}>{pro.descripcion}</td>
+                            ))}
+                        </tr>
+                        <tr>
+                            {filtrar.map((pro, index) => (
+                                <td key={index}>{pro.direcion}</td>
+                            ))}
+                        </tr>
+                        <tr>
+                            {galet.map((pro, index) => (
+                                <td key={index}> {pro.imagen} </td>
+                            ))}
+                        </tr>
+                        <tr>
+                            {galet.map((pro, index) => (
+                                <td key={index}>{pro.nombre}</td>
+                            ))}
+                        </tr>
+                        <tr>
+                            {galet.map((pro, index) => (
+                                <td key={index}>{pro.descripcion}</td>
+                            ))}
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+            )
 }
 
-export default ListaProductos
+            export default ListaProductos

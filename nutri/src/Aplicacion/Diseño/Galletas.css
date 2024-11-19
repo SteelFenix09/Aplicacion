@@ -13,8 +13,8 @@
     cursor: pointer;
 }
 
-.buton:hover {
-    background-color: #66b5d1;
+.botoncito:hover {
+    background-color: #8647b4;
     /* Cambia el color de fondo al pasar el cursor sobre el botón */
 }
 
