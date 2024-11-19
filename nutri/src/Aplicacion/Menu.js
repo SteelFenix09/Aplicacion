@@ -1,9 +1,18 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom'
 
-
+import ListaProductos from './ListaProductos';
 
 function Menu() {
+
+    const [searchText, setSearchText] = useState('');
+    const navigate = useNavigate();
+
+    const handleBuscar = (e) => { // Agrega 'e' como argumento
+        e.preventDefault();
+        navigate(`/datos?search=${searchText}`);
+    };
 
     return (
         <div>
@@ -16,9 +25,6 @@ function Menu() {
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <Link class="nav-link" to="/informacion">Tu Informacion</Link>
-                            </li>
                             <li class="nav-item">
                                 <Link class="nav-link" to="/iniciativa">Iniciativa</Link>
                             </li>
@@ -37,10 +43,10 @@ function Menu() {
                             </li>
 
                         </ul>
-                        {/* <form class="d-flex" role="search" >
-                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"  />
-                            <button class="btn btn-outline-success" type="submit" >Buscar</button>
-                        </form> */}
+                        <form class="d-flex" role="search" onSubmit={(e) => handleBuscar(e)} >
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" value={searchText} onChange={(e) => setSearchText(e.target.value)} />
+                            <button class="btn btn-outline-success" type="submit" onClick={handleBuscar} >Search</button>
+                        </form>
                     </div>
                 </div>
             </nav>
