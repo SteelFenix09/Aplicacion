@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import uwu from './../Diseño/img/imgalleta/galletadeempe.png'
 import tablaempe from './../Diseño/img/imgalleta/emperadortabla.png'
 
@@ -12,6 +13,12 @@ function Infoempe() {
                         <th scope="col"><h2>GALLETA EMPERADOR CHOCOLATE</h2></th>
                         <th scope="col"><h2>INFORMACIÓN NUTRICIONAL</h2></th>
                         <th scope="col"><h2>RECOMENDACIONES</h2></th>
+                        <th scope="col"><center><li class="nav-item">
+                         <Link class="nav-link" to="/galleta">
+                            <h6>REGRESAR</h6>
+                            </Link>
+                        </li></center>
+                        </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -33,6 +40,7 @@ function Infoempe() {
                             <br></br>
                             4. Hidratación: Opta por agua o té sin azúcar como acompañamiento para evitar un exceso de calorías y mantenerte hidratado.
                         </td>
+                        <td></td>
                     </tr>
                 </tbody>
             </table>

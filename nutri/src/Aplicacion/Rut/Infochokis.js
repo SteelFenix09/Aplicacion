@@ -1,7 +1,7 @@
 import React from 'react'
 import waos from './../Diseño/img/imgalleta/galletadechokis.png'
 import tablacho from './../Diseño/img/imgalleta/tablachokis.png'
-
+import { Link } from 'react-router-dom'
 
 function Infochokis() {
     return (
@@ -12,6 +12,12 @@ function Infochokis() {
                         <th scope="col"><h2>GALLETA CHOKIS</h2></th>
                         <th scope="col"><h2>INFORMACIÓN NUTRICIONAL</h2></th>
                         <th scope="col"><h2>RECOMENDACIONES</h2></th>
+                        <th scope="col"><center><li class="nav-item">
+                            <Link class="nav-link" to="/galleta">
+                                <h6>REGRESAR</h6>
+                            </Link>
+                        </li></center>
+                        </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -33,6 +39,7 @@ function Infochokis() {
                             <br></br>
                             4. Hidratación: Acompáñalas con agua, leche baja en grasa o infusiones sin azúcar, para evitar añadir más calorías a tu consumo.
                         </td>
+                        <td></td>
                     </tr>
                 </tbody>
             </table>

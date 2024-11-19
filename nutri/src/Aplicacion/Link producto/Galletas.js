@@ -45,7 +45,7 @@ function Galletas() {
                 <Link class="nav-link" to="/empe">
                   <h6>La galleta Emperador de chocolate
                     es una galleta rellena de crema de chocolate,
-                    con una textura crujiente y sueave.</h6>
+                    con una textura crujiente y suave.</h6>
                 </Link>
               </li></center></td>
           </tr>
