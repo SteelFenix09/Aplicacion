@@ -51,8 +51,8 @@ function MasIniciativa() {
                 </tbody>
             </table>
             <td colSpan={6}>
-                <li class="buton">
-                    <Link class="buton" to="/bebidas">Regresar</Link>
+                <li >
+                    <Link to="/iniciativa">Regresar</Link>
                 </li>
                     </td>
         </div>

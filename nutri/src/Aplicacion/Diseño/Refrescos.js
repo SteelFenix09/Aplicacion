@@ -26,19 +26,19 @@ function Refrescos() {
         nombre:  'Jumex Durazno',
         descripcion: '...',
         imagen: <img src={Jumex} id='jumex' />,
-        direcion: <li><Link to="/jumex">Mas informacion...</Link></li>
+        direcion: <li class="buton"><Link class="buton" to="/jumex">Mas informacion...</Link></li>
     },
     {
         nombre: 'Sprite',
         descripcion: '...',
         imagen: <img src={Sprite} id='sprite' />,
-        direcion: <li><Link to="/sprite">Mas informacion...</Link></li>
+        direcion: <li class="buton"><Link class="buton" to="/sprite">Mas informacion...</Link></li>
     },
     {
         nombre: 'Pepsi',
         descripcion: '...',
         imagen: <img src={Pepsi} id='pepsi' />,
-        direcion: <li ><Link to="/pepsi">Mas informacion...</Link></li>
+        direcion: <li class="buton"><Link class="buton" to="/pepsi">Mas informacion...</Link></li>
     },
     ]
 
@@ -75,7 +75,7 @@ function Refrescos() {
             </table>
             <td colSpan={6}>
                 <li class="buton">
-                    <Link to="/Nosotros">Regresar</Link>
+                    <Link class="buton" to="/bebidas">Regresar</Link>
                 </li>
                     </td>
         </div>

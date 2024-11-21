@@ -65,3 +65,33 @@ body{
 #espacio {
     width: 30%;
 }
+.textNutrion{
+    font-size: 21px;
+    margin-left: 230px;
+    margin-right: 230px;
+    margin-top: 50px;
+    text-align: center;
+}
+.Nutrion{
+margin-right: 300px;
+}
+
+.contenedor-grande {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    background-color: #a0d1f0;
+}
+
+.contenedor-mediano {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    background-color: #d1a0f0;
+}
+
+.contenedor-pequeno {
+    display: block;
+    font-size: 14px;
+    background-color: #f0a0d1;
+}

@@ -19,7 +19,7 @@ function Sabritas() {
         nombre: 'Doritos Pizzerolas',
         descripcion: 'Son unas deliciosas botanas que combinan el sacrujiente y divertido de los Doritos con el irresistiblegusto de la pizza',
         imagen: <img src={Pizz} id='img-pizz' />,
-        direccion: <li class="buton"><Link class="buton" to="/pizz">Mas informacion...</Link></li>
+        direccion: <li><Link to="/pizz">Mas informacion...</Link></li>
             
         
     },
@@ -27,13 +27,13 @@ function Sabritas() {
         nombre: 'Rufles Queso',
         descripcion: 'Estos pequeños bocadillos en forma de "chetos" están recubiertos de un delicioso polvo de queso que los hace irresistibles.',
         imagen: <img src={Rufles} id='img-rufles' />,
-        direccion:<li class="buton"><Link class="buton" to="/rufles">Mas informacion...</Link></li>
+        direccion:<li><Link to="/rufles">Mas informacion...</Link></li>
     },
     {
         nombre: 'Chetos Torciditos',
         descripcion: '...',
         imagen: <img src={Torci} id='img-torci' />,
-        direccion:<li class="buton"><Link class="buton" to="/torciditos">Mas informacion...</Link></li>
+        direccion:<li ><Link to="/torciditos">Mas informacion...</Link></li>
     },
     ]
 
@@ -69,7 +69,7 @@ function Sabritas() {
             </table>
             <td colSpan={6}>
                 <li class="buton">
-                    <Link class="buton" to="/bebidas">Regresar</Link>
+                    <Link to="/Nosotros">Regresar</Link>
                 </li>
                     </td>
         </div>

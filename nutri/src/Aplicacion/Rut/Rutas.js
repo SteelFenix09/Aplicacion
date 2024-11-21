@@ -3,6 +3,8 @@ import { Routes, Route } from 'react-router-dom'
 
 import Iniciativa from '../Diseño/Iniciativa'
 import MasIniciativa from '../MasIniciativa'
+import NutrionsFacts from '../Diseño/NutrionsFacts'
+
 
 
 import Galletas from '../Diseño/Galletas'
@@ -29,6 +31,7 @@ function Rutas() {
             <Routes> {/* BrowserRouter eliminado */}
                 <Route path='/iniciativa' element={<Iniciativa />} />
                 <Route path='/mas' element={<MasIniciativa />} />
+                <Route path='/Nosotros' element={<NutrionsFacts />} />
 
 
                 <Route path='/galleta' element={<Galletas />} />
@@ -48,6 +51,7 @@ function Rutas() {
                 
                 <Route path='/refrescos' element={<Sabritas />} />
                 <Route path='/refrescos' element={<Refrescos />} />
+                <Route path='/refrescos' element={<Galletas />} />
             </Routes>
             <Footer />
         </div>

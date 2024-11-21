@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 function Iniciativa() {
     return (
         <div>
-            <table>
+            <table >
                 <tr>
                     <td rowSpan={3}><img src={img} className='manipulacio'></img></td>
                     <td ></td>
@@ -26,11 +26,13 @@ function Iniciativa() {
                     <td></td>
 
                     <li class="buton">
-                        <Link class="buton" to="/mas">¡Leer mas...!</Link>
+                        <Link  to="/mas">¡Leer mas...!</Link>
                     </li>
-
                 </tr>
             </table>
+            <li >
+                    <Link to="/Nosotros">Regresar</Link>
+                </li>
         </div>
     )
 }

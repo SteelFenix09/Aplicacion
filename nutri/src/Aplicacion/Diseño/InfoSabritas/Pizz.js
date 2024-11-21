@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 function Pizz() {
   return (
-    <div>
+    <div className='col-sm-12 col-md-6 col-lg-4'>
       <table className="table-striped" >
     <tr><h1 className='DoPizz'>Tabla y Recomendaciones</h1></tr>
     <tr>

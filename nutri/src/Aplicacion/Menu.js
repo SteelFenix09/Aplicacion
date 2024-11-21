@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 
 function Menu() {
     return (
-        <div>
+        <div >
             {/* Menú de navegación */}
             <nav className='navbar'>
                 <div className="container-fluid">
                     <a className="navbar-brand menu" href=""></a>
-                    <Link className='navbar-brand' to="/achas"><h1><strong>NUTRIONFACT </strong></h1></Link>
+                    <Link className='navbar-brand' to="/Nosotros"><h1><strong>NUTRIONFACT </strong></h1></Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
