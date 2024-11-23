@@ -8,7 +8,7 @@ import nutrion3 from './img/Refrescos.png'
 function NutrionsFacts() {
     return (
         <div className='textNutrion'>
-            <p id='pez-gordo' className='col-sm-12 col-md-6 col-lg-4'>
+            <p id='pez-gordo' className='col-sm-12 col-md-6 col-lg-4'Ñ>
                 Nutrionfact es tu asistente personal para la nutrición. Consulta rápidamente tablas nutricionales de alimentos y productos, compara opciones y toma decisiones saludables. La aplicación te permite:
 
                 Escanear códigos de barras para obtener información nutricional detallada.
